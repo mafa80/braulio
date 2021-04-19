@@ -11,6 +11,10 @@ app.use(express.urlencoded({extended:true}));
 
 const {UpdateProducts, ReadOrders, ReadCategories, ReadBrands} = require('./controllers');
 
+app.get('/',(req,res)=>{
+    res.send("todo salio cool")
+})
+
 app.post('/products',UpdateProducts);
 app.get('/orders', ReadOrders);
 app.get('/categories', ReadCategories);
