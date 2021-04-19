@@ -6,7 +6,9 @@ const bodyParser = require('body-parser');
 const app = express();
 
 
+
 app.use(express.json());
+
 app.use(express.urlencoded({extended:true}));
 
 const {UpdateProducts, ReadOrders, ReadCategories, ReadBrands} = require('./controllers');
@@ -20,4 +22,4 @@ app.get('/orders', ReadOrders);
 app.get('/categories', ReadCategories);
 app.get('/brands', ReadBrands);
 
-app.listen(3000);
+app.listen(process.env.PORT || 5000)
