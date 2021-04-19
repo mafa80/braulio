@@ -2,7 +2,8 @@
   "name": "woocomerce",
   "version": "1.0.1",
   "engines": {
-    "node": "12.19.0"
+    "node": "12.19.0",
+    "npm": "7.6.0"
   },
   "description": "",
   "main": "index.js",
